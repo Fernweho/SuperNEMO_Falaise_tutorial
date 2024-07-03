@@ -1,0 +1,2337 @@
+slurmstepd: error: couldn't chdir to `/sps/nemo/scratch/ktrofimi/Attempt/data_folder/Tl208_dif_files/$TMPDIR': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/sps/nemo/scratch/ktrofimi/Attempt/data_folder/Tl208_dif_files/$TMPDIR': No such file or directory: going to /tmp instead
+[devel] Fetch plugins configuration...
+[notice:virtual void mctools::g4::manager::_init_core():1186] Main manager settings...
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'calo_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'tracker_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'source_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'all_details' is supported.
+[notice:void mctools::g4::manager::_init_seeds():1611] Using registered seed for 'MGR' : 654839234
+[notice:void mctools::g4::manager::_init_seeds():1620] Using registered seed for 'VG' : 543989150
+[notice:void mctools::g4::manager::_init_seeds():1629] Using registered seed for 'EG' : 1065913325
+[notice:void mctools::g4::manager::_init_seeds():1638] Using registered seed for 'SHPF' : 544456723
+[notice:virtual void mctools::g4::manager::_init_prngs():1787] Setting the HepRandomEngine to 'mctools::g4::g4_prng'...
+[notice:virtual void mctools::g4::manager::_init_geometry():1356] Geometry manager settings...
+[notice:virtual void mctools::g4::manager::_init_geometry():1358] Use external geometry manager...
+[notice:virtual void mctools::g4::manager::_init_vertex_generator():1389] Vertex generator settings...
+[notice:virtual void mctools::g4::manager::_init_event_generator():1438] Primary event generator settings...
+HepRandomEngine::put called -- no effect!
+[notice:virtual void mctools::g4::manager::_init_detector_construction():1478] Detector construction...
+[notice:virtual void mctools::g4::manager::_init_physics_list():1492] Physics list initialization...
+[notice:virtual void mctools::g4::manager::_init_run_action():1506] Run action initialization...
+[notice:virtual void mctools::g4::manager::_init_event_action():1532] Event action initialization...
+[notice:virtual void mctools::g4::manager::_init_primary_generator_action():1545] Primary generator action initialization...
+[notice:virtual void mctools::g4::manager::_init_tracking_action():1564] Tracking action initialization...
+[notice:virtual void mctools::g4::manager::_init_stepping_action():1574] Stepping action initialization...
+[notice:virtual void mctools::g4::manager::_init_stacking_action():1584] Stacking action initialization...
+[notice:virtual void mctools::g4::manager::initialize_impl():952] G4 kernel initialization...
+[notice] SHPF: Step hit processor: 'calorimeter.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'calorimeter.hit_processor'
+[notice] |-- Hit category       : 'calo'
+[notice] |-- Sensitive category : 'calorimeter_SD'
+[notice] |-- Geometry manager   : 0x16fbd20
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'calorimeter_SD'
+[notice] |-- Private pool : 0x302a2f0
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x302a2f0
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'calorimeter_block'
+[notice] |-- Mapping    : 0x16fc0e0
+[notice] |-- Categories : 0x16fc078 [50]
+[notice] `-- Calorimeter block type : 1302
+[notice] SHPF: Step hit processor: 'gg.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'gg.hit_processor'
+[notice] |-- Hit category       : 'gg'
+[notice] |-- Sensitive category : 'tracker_SD'
+[notice] |-- Geometry manager   : 0x16fbd20
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'tracker_SD'
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[notice] SHPF: Step hit processor: 'gveto.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'gveto.hit_processor'
+[notice] |-- Hit category       : 'gveto'
+[notice] |-- Sensitive category : 'gveto_SD'
+[notice] |-- Geometry manager   : 0x16fbd20
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'gveto_SD'
+[notice] |-- Private pool : 0x3027990
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x3027990
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'gveto_block'
+[notice] |-- Mapping    : 0x16fc0e0
+[notice] |-- Categories : 0x16fc078 [50]
+[notice] `-- Calorimeter block type : 1252
+[notice] SHPF: Step hit processor: 'xcalorimeter.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'xcalorimeter.hit_processor'
+[notice] |-- Hit category       : 'xcalo'
+[notice] |-- Sensitive category : 'xcalorimeter_SD'
+[notice] |-- Geometry manager   : 0x16fbd20
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'xcalorimeter_SD'
+[notice] |-- Private pool : 0x3023e30
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x3023e30
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'xcalo_block'
+[notice] |-- Mapping    : 0x16fc0e0
+[notice] |-- Categories : 0x16fc078 [50]
+[notice] `-- Calorimeter block type : 1232
+[warning:void mctools::g4::em_field_g4_stuff::initialize(const datatools::properties&):257] Using default EM field stepper for field labelled 'module'!
+[warning:void mctools::g4::em_field_g4_stuff::initialize(const datatools::properties&):334] Field labelled 'module' is propagated to daughter volumes!
+[notice:static void mctools::g4::manager_parameters::setup(const mctools::g4::manager_parameters&, mctools::g4::manager&):270] Simulation manager has been configured and initialized.
+[notice:void mctools::g4::manager::run_simulation():188] Starting the simulation...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1051] Entering batch mode...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1063] Entering automatic mode...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1099] G4 command = /run/beamOn 1000000000
+HepRandomEngine::put called -- no effect!
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1113] Record the final PRNG internal states after the session has stopped normaly.
+[notice:void mctools::g4::manager::run_simulation():190] Simulation stops !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flsimulate' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flsimulate.simulation' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flsimulate.variantService' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flsimulate.services' will ignore meta 'flsimulate::section' !
+[debug] Input metadata: 
+[debug] |-- Description  : Bayeux/dpp library's I/O module metadata store
+[debug] |-- Key label    : "name"
+[debug] |-- Entries      : [4]
+[debug] |   |-- Entry : "flsimulate"
+[debug] |   |   |-- Key        : "flsimulate"
+[debug] |   |   |-- Meta       : "flsimulate::section"
+[debug] |   |   `-- Properties : [12]
+[debug] |   |       |-- Description  : 'flsimulate basic system informations'
+[debug] |   |       |   |-- Short description : 'flsimulate basic system informations'
+[debug] |   |       |   `-- Auxiliary descriptions : <none>
+[debug] |   |       |-- Name : 'application'
+[debug] |   |       |   |-- Description  : 'The simulation application used to produce Monte Carlo data'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : 'flsimulate'
+[debug] |   |       |-- Name : 'application.version'
+[debug] |   |       |   |-- Description  : 'The version of the simulation application'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : '4.1.0'
+[debug] |   |       |-- Name : 'bayeux.version'
+[debug] |   |       |   |-- Description  : 'Bayeux version'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : '3.5.3'
+[debug] |   |       |-- Name : 'doDigitization'
+[debug] |   |       |   |-- Description  : 'Activate digitization'
+[debug] |   |       |   |-- Type  : boolean (scalar)
+[debug] |   |       |   `-- Value : false
+[debug] |   |       |-- Name : 'doSimulation'
+[debug] |   |       |   |-- Description  : 'Activate simulation'
+[debug] |   |       |   |-- Type  : boolean (scalar)
+[debug] |   |       |   `-- Value : true
+[debug] |   |       |-- Name : 'embeddedMetadata'
+[debug] |   |       |   |-- Description  : 'Metadata embedding flag'
+[debug] |   |       |   |-- Type  : boolean (scalar)
+[debug] |   |       |   `-- Value : true
+[debug] |   |       |-- Name : 'experimentalSetupUrn'
+[debug] |   |       |   |-- Description  : 'Experimental setup URN'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : 'urn:snemo:demonstrator:setup:1.0'
+[debug] |   |       |-- Name : 'falaise.version'
+[debug] |   |       |   |-- Description  : 'Falaise version'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : '4.1.0'
+[debug] |   |       |-- Name : 'falaise.version.commit'
+[debug] |   |       |   |-- Description  : 'Falaise commit'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : 'bd1bb568'
+[debug] |   |       |-- Name : 'falaise.version.state'
+[debug] |   |       |   |-- Description  : 'Falaise commit state'
+[debug] |   |       |   |-- Type  : boolean (scalar)
+[debug] |   |       |   `-- Value : false
+[debug] |   |       |-- Name : 'numberOfEvents'
+[debug] |   |       |   |-- Description  : 'Number of simulated events'
+[debug] |   |       |   |-- Type  : integer (scalar)
+[debug] |   |       |   `-- Value : 1000
+[debug] |   |       `-- Name : 'userProfile'
+[debug] |   |           |-- Description  : 'User profile'
+[debug] |   |           |-- Type  : string (scalar)
+[debug] |   |           `-- Value : 'normal'
+[debug] |   |-- Entry : "flsimulate.simulation"
+[debug] |   |   |-- Key        : "flsimulate.simulation"
+[debug] |   |   |-- Meta       : "flsimulate::section"
+[debug] |   |   `-- Properties : [2]
+[debug] |   |       |-- Description  : 'Simulation setup parameters'
+[debug] |   |       |   |-- Short description : 'Simulation setup parameters'
+[debug] |   |       |   `-- Auxiliary descriptions : <none>
+[debug] |   |       |-- Name : 'rngSeeding'
+[debug] |   |       |   |-- Description  : 'PRNG initial seeds'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : '{EG=1065913325; MGR=654839234; SHPF=544456723; VG=543989150}'
+[debug] |   |       `-- Name : 'simulationSetupUrn'
+[debug] |   |           |-- Description  : 'Simulation setup URN'
+[debug] |   |           |-- Type  : string (scalar)
+[debug] |   |           `-- Value : 'urn:snemo:demonstrator:simulation:2.3'
+[debug] |   |-- Entry : "flsimulate.variantService"
+[debug] |   |   |-- Key        : "flsimulate.variantService"
+[debug] |   |   |-- Meta       : "flsimulate::section"
+[debug] |   |   `-- Properties : [2]
+[debug] |   |       |-- Description  : 'Variant setup'
+[debug] |   |       |   |-- Short description : 'Variant setup'
+[debug] |   |       |   `-- Auxiliary descriptions : <none>
+[debug] |   |       |-- Name : 'configUrn'
+[debug] |   |       |   |-- Description  : 'Variants setup configuration URN'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : 'urn:snemo:demonstrator:simulation:2.3:variants'
+[debug] |   |       `-- Name : 'profile'
+[debug] |   |           |-- Description  : 'Variants profile path'
+[debug] |   |           |-- Type  : string (scalar) [explicit path]
+[debug] |   |           `-- Value : '/sps/nemo/scratch/ktrofimi/Attempt/Isotopes_configurations/Tl208.conf'
+[debug] |   `-- Entry : "flsimulate.services"
+[debug] |       |-- Key        : "flsimulate.services"
+[debug] |       |-- Meta       : "flsimulate::section"
+[debug] |       `-- Properties : [1]
+[debug] |           |-- Description  : 'Services configuration'
+[debug] |           |   |-- Short description : 'Services configuration'
+[debug] |           |   `-- Auxiliary descriptions : <none>
+[debug] |           `-- Name : 'configUrn'
+[debug] |               |-- Description  : 'Services setup configuration URN'
+[debug] |               |-- Type  : string (scalar)
+[debug] |               `-- Value : 'urn:snemo:demonstrator:simulation:2.3:services'
+[debug] `-- Ordered entries      : [4]
+[debug]     |-- Entry [rank=0] : "flsimulate"
+[debug]     |-- Entry [rank=1] : "flsimulate.simulation"
+[debug]     |-- Entry [rank=2] : "flsimulate.variantService"
+[debug]     `-- Entry [rank=3] : "flsimulate.services"
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_CAT'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'TrackFit'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_TrackFit'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_ChargedParticleTracking'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'GammaTracking'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_GammaClustering'...
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flsimulate' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flsimulate.simulation' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flsimulate.variantService' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flsimulate.services' will ignore meta 'flsimulate::section' !
+CAT::clusterizer::initialize: Entering...
+CAT::clusterizer::readDstProper: Entering...
+CAT::clusterizer::readDstProper: SuperNemo kind of data
+CAT::clusterizer::readDstProper: small radius 2 mm
+CAT::clusterizer::readDstProper: tangent phi 20
+CAT::clusterizer::readDstProper: tangent theta 160
+CAT::clusterizer::readDstProper: small number 0.1 mm
+CAT::clusterizer::readDstProper: quadrant angle 90
+CAT::clusterizer::readDstProper: ratio 10000
+CAT::clusterizer::readDstProper: compatibility distance 4
+CAT::clusterizer::readDstProper: maximum chi2 3
+CAT::clusterizer::readDstProper: probmin 0
+CAT::clusterizer::readDstProper: first event number -1
+CAT::clusterizer::readDstProper: cell pitch:  43.95 mm
+CAT::clusterizer::readDstProper: verbosity print level: 2
+CAT::clusterizer::readDstProper: Done.
+CAT::clusterizer::initialize: Done.
+CAT::sequentiator::readDstProper: SuperNemo kind of data
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 310.327 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 315.713 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 308.683 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 130.295 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 129.264 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.5727 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 1, 2nd from 1 to 1
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.7069 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 124.451 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4.14416 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 124.451 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4.14416 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 124.451 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 124.451 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 122.307 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 56.1797 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 281.043 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 405.503 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 404.949 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 51.3038 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta -nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 3.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta -nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 51.3038 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta -nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 3.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta -nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.5515 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.5515 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.5515 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.5515 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.5515 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.5515 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.5515 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.5515 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 28.6912 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 31.7619 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 28.6912 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 31.7619 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 28.6912 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 31.7619 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 28.6912 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 31.7619 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 28.6912 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 31.7619 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 28.6912 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 31.7619 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 28.6912 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 31.7619 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 28.6912 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 31.7619 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A -nan Sw 5.75231 Swxx -nan Swx -nan
+CAT::LinearRegression::fit: problem: linear regression sy02 -nan Swxx -nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, delta 0 A 0.04 C 0 B 0
+CAT::LinearRegression::fit: problem: linear regression sy02 -2.60959e+17 Swxx 7416.91 delta -2.84217e-14
+CAT::CircleRegression::fit: problem: in circle regression, delta 0 A 0.04 C 0 B 0
+CAT::LinearRegression::fit: problem: linear regression sy02 -2.60959e+17 Swxx 7416.91 delta -2.84217e-14
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.2688 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.2688 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.0054 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.0054 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.0054 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.0054 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.2688 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 50.2688 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.0054 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.0054 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.0054 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 49.0054 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.291 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 35.5692 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 334.447 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 39.0893 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 26.9828 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 46.2624 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 73.4556 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.8036 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.9373 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.8036 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.9373 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.8036 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.9373 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.8036 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.9373 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.8036 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.9373 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.8036 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.9373 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.8036 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.9373 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.8036 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 18.9373 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 80.6154 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 82.0249 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 54.5866 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.9903 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 53.111 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 52.5148 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 202.272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 202.272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 202.272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 202.272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 203.625 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 3.35385 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 203.625 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 3.35385 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 202.272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 202.272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 202.272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 202.272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.7588 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 34.0272 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 69.4526 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 42.8208 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 51.4205 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 4 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 2 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 152.677 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::CircleRegression::fit: problem: in circle regression, A nan Sw 97.2491 Swxx nan Swx nan
+CAT::LinearRegression::fit: problem: linear regression sy02 nan Swxx nan delta nan
+CAT::clusterizer::finalize: Ending algorithm clusterizer...
+CAT::clusterizer::finalize: Initial events:  0
+CAT::clusterizer::finalize: Skipped events:  0 ( -nan %)
+CAT::clockable::dump: time of ' clusterizer: clusterize ' : 7105.42 ms (100 %)
+CAT::clockable::dump: time of ' clusterizer: is good couplet ' : 1946.9 ms (27.4003 %)
+CAT::clockable::dump: time of ' clusterizer: get near cells ' : 109.523 ms (1.5414 %)
+CAT::clockable::dump: time of ' clusterizer: prepare event ' : 39.524 ms (0.556252 %)
+CAT::clockable::dump: time of ' clusterizer: order cells ' : 4.202 ms (0.059138 %)
+CAT::clockable::dump: time of ' clusterizer: setup_clusters ' : 0.568 ms (0.0079939 %)
+CAT::clockable::dump: time of ' clusterizer: finalize ' : 0.079 ms (0.00111183 %)
+CAT::sequentiator::finalize: Ending algorithm sequentiator
+CAT::sequentiator::finalize: Initial events:  0
+CAT::sequentiator::finalize: Skipped events:  0 ( -nan %)
+CAT::clockable::dump: time of ' sequentiator: sequentiate ' : 15420.5 ms (100 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence ' : 6399.8 ms (41.5019 %)
+CAT::clockable::dump: time of ' sequentiator: clean up sequences ' : 5552.48 ms (36.0072 %)
+CAT::clockable::dump: time of ' sequentiator: evolve ' : 5025.88 ms (32.5922 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B ' : 4455.6 ms (28.894 %)
+CAT::clockable::dump: time of ' sequentiator: pick new cell ' : 3968.57 ms (25.7357 %)
+CAT::clockable::dump: time of ' sequentiator: make new sequence ' : 3681.28 ms (23.8727 %)
+CAT::clockable::dump: time of ' sequentiator: manage copy sequence ' : 3580.09 ms (23.2164 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A ' : 2791.9 ms (18.1052 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: evolve ' : 2537.08 ms (16.4527 %)
+CAT::clockable::dump: time of ' sequentiator: make scenarios ' : 2171.16 ms (14.0797 %)
+CAT::clockable::dump: time of ' sequentiator: can add family ' : 1734.48 ms (11.2479 %)
+CAT::clockable::dump: time of ' sequentiator: can match ' : 1038.61 ms (6.73527 %)
+CAT::clockable::dump: time of ' sequentiator: set free level ' : 651.842 ms (4.22712 %)
+CAT::clockable::dump: time of ' sequentiator: copy scenario ' : 607.419 ms (3.93904 %)
+CAT::clockable::dump: time of ' sequentiator: copy sequence ' : 572.881 ms (3.71506 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part C ' : 550.573 ms (3.5704 %)
+CAT::clockable::dump: time of ' sequentiator: add pair ' : 413.885 ms (2.68399 %)
+CAT::clockable::dump: time of ' sequentiator: interpret physics ' : 376.257 ms (2.43998 %)
+CAT::clockable::dump: time of ' sequentiator: better scenario ' : 276.75 ms (1.79469 %)
+CAT::clockable::dump: time of ' sequentiator: copy to lfn ' : 249.827 ms (1.6201 %)
+CAT::clockable::dump: time of ' sequentiator: direct out of foil ' : 221.718 ms (1.43781 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B: set free level ' : 118.07 ms (0.76567 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B: noc ' : 104.825 ms (0.679778 %)
+CAT::clockable::dump: time of ' sequentiator: calculate scenario ' : 75.323 ms (0.488461 %)
+CAT::clockable::dump: time of ' sequentiator: good first node ' : 9.89 ms (0.0641355 %)
+CAT::clockable::dump: time of ' sequentiator: make families ' : 7.021 ms (0.0455303 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part A ' : 6.629 ms (0.0429883 %)
+CAT::clockable::dump: time of ' sequentiator: get link index ' : 3.892 ms (0.0252392 %)
+CAT::clockable::dump: time of ' sequentiator: there is free sequence beginning with ' : 1.12 ms (0.00726307 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A: beta ' : 0.873 ms (0.0056613 %)
+CAT::clockable::dump: time of ' sequentiator: direct scenarios out of foil ' : 0.674 ms (0.00437081 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A: alpha ' : 0.67 ms (0.00434487 %)
+CAT::clockable::dump: time of ' sequentiator: finalize ' : 0 ms (0 %)
+CAT::clockable::dump: time of ' sequentiator: match gaps ' : 0 ms (0 %)
+CAT::clockable::dump: time of ' sequentiator: sequentiation ' : 0 ms (0 %)
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flreconstruct' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flreconstruct.variantService' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flreconstruct.services' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flreconstruct.pipeline' will ignore meta 'flreconstruct::section' !
+[debug] Input metadata: 
+[debug] |-- Description  : Bayeux/dpp library's I/O module metadata store
+[debug] |-- Key label    : "name"
+[debug] |-- Entries      : [4]
+[debug] |   |-- Entry : "flreconstruct"
+[debug] |   |   |-- Key        : "flreconstruct"
+[debug] |   |   |-- Meta       : "flreconstruct::section"
+[debug] |   |   `-- Properties : [8]
+[debug] |   |       |-- Description  : 'flreconstruct basic system informations'
+[debug] |   |       |   |-- Short description : 'flreconstruct basic system informations'
+[debug] |   |       |   `-- Auxiliary descriptions : <none>
+[debug] |   |       |-- Name : 'application'
+[debug] |   |       |   |-- Description  : 'The flreconstruct application used to produce reconstructed data'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : 'flreconstruct'
+[debug] |   |       |-- Name : 'application.version'
+[debug] |   |       |   |-- Description  : 'The version of the reconstruction application'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : '4.1.0'
+[debug] |   |       |-- Name : 'bayeux.version'
+[debug] |   |       |   |-- Description  : 'Bayeux version'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : '3.5.3'
+[debug] |   |       |-- Name : 'experimentalSetupUrn'
+[debug] |   |       |   |-- Description  : 'Experimental setup URN'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : 'urn:snemo:demonstrator:setup:1.0'
+[debug] |   |       |-- Name : 'falaise.version'
+[debug] |   |       |   |-- Description  : 'Falaise version'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : '4.1.0'
+[debug] |   |       |-- Name : 'falaise.version.commit'
+[debug] |   |       |   |-- Description  : 'Falaise commit'
+[debug] |   |       |   |-- Type  : string (scalar)
+[debug] |   |       |   `-- Value : 'bd1bb568'
+[debug] |   |       |-- Name : 'falaise.version.state'
+[debug] |   |       |   |-- Description  : 'Falaise commit state'
+[debug] |   |       |   |-- Type  : boolean (scalar)
+[debug] |   |       |   `-- Value : false
+[debug] |   |       `-- Name : 'userProfile'
+[debug] |   |           |-- Description  : 'User profile'
+[debug] |   |           |-- Type  : string (scalar)
+[debug] |   |           `-- Value : 'normal'
+[debug] |   |-- Entry : "flreconstruct.variantService"
+[debug] |   |   |-- Key        : "flreconstruct.variantService"
+[debug] |   |   |-- Meta       : "flreconstruct::section"
+[debug] |   |   `-- Properties : [1]
+[debug] |   |       |-- Description  : 'Variant setup'
+[debug] |   |       |   |-- Short description : 'Variant setup'
+[debug] |   |       |   `-- Auxiliary descriptions : <none>
+[debug] |   |       `-- Name : 'configUrn'
+[debug] |   |           |-- Description  : 'Variants setup configuration URN'
+[debug] |   |           |-- Type  : string (scalar)
+[debug] |   |           `-- Value : 'urn:snemo:demonstrator:setup:1.0:variants'
+[debug] |   |-- Entry : "flreconstruct.services"
+[debug] |   |   |-- Key        : "flreconstruct.services"
+[debug] |   |   |-- Meta       : "flreconstruct::section"
+[debug] |   |   `-- Properties : [1]
+[debug] |   |       |-- Description  : 'Services configuration'
+[debug] |   |       |   |-- Short description : 'Services configuration'
+[debug] |   |       |   `-- Auxiliary descriptions : <none>
+[debug] |   |       `-- Name : 'configUrn'
+[debug] |   |           |-- Description  : 'Services setup configuration URN'
+[debug] |   |           |-- Type  : string (scalar)
+[debug] |   |           `-- Value : 'urn:snemo:demonstrator:setup:1.0:services'
+[debug] |   `-- Entry : "flreconstruct.pipeline"
+[debug] |       |-- Key        : "flreconstruct.pipeline"
+[debug] |       |-- Meta       : "flreconstruct::section"
+[debug] |       `-- Properties : [1]
+[debug] |           |-- Description  : 'Reconstruction setup parameters'
+[debug] |           |   |-- Short description : 'Reconstruction setup parameters'
+[debug] |           |   `-- Auxiliary descriptions : <none>
+[debug] |           `-- Name : 'module'
+[debug] |               |-- Description  : 'Reconstruction pipeline top module'
+[debug] |               |-- Type  : string (scalar)
+[debug] |               `-- Value : 'pipeline'
+[debug] `-- Ordered entries      : [4]
+[debug]     |-- Entry [rank=0] : "flreconstruct"
+[debug]     |-- Entry [rank=1] : "flreconstruct.variantService"
+[debug]     |-- Entry [rank=2] : "flreconstruct.services"
+[debug]     `-- Entry [rank=3] : "flreconstruct.pipeline"
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'SensitivityModule'...
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flreconstruct' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flreconstruct.variantService' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flreconstruct.services' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):535] Key 'flreconstruct.pipeline' will ignore meta 'flreconstruct::section' !
+slurmstepd: error: run_script_as_user: couldn't change working dir to /sps/nemo/scratch/ktrofimi/Attempt/data_folder/Tl208_dif_files/$TMPDIR: No such file or directory

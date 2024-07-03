@@ -1,0 +1,756 @@
+****************************************************************
+*                      SLURM Batch System                      *
+*           IN2P3 Computing Centre, Villeurbanne FR            *
+****************************************************************
+* Date:                 Thu Jun 27 04:40:45 CEST 2024
+* Job name:             Tl208
+* Job id:               17156903
+* User:                 ktrofimi
+* Account:              nemo
+* Submit host:          cca012
+* Partition:            htc
+* Quality of service:   normal
+* Nodelist:             ccwslurm0170
+****************************************************************
+=================================
+run_script started:
+Working in directory: 
+/tmp
+=================================
+STARTING simulation!
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-04    (30-January-2015)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+G4GDML: Reading '/tmp/ktrofimi/snemodemo_mc_g4.d/mctools_g4_geometry.gdml.MMGhFv'...
+G4GDML: Reading definitions...
+G4GDML: Reading materials...
+G4GDML: Reading solids...
+G4GDML: Reading structure...
+G4GDML: Reading setup...
+G4GDML: Reading '/tmp/ktrofimi/snemodemo_mc_g4.d/mctools_g4_geometry.gdml.MMGhFv' done!
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.005, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.005, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : vacuum
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : lab_air
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__iron
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  20.8129 keV    e-  1.28578 MeV    e+  1.21852 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__concrete
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  4.87903 keV    e-  559.114 keV    e+  540.651 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 4     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__PTFE
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  4.35261 keV    e-  529.867 keV    e+  515.822 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 5     used in the geometry : Yes     recalculation needed : No 
+ Material : tracking_gas
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 6     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__mylar
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  3.00838 keV    e-  421.697 keV    e+  405.042 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 7     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__PMMA
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.78478 keV    e-  391.667 keV    e+  378.733 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 8     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__nylon
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.66584 keV    e-  394.306 keV    e+  383.855 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 9     used in the geometry : Yes     recalculation needed : No 
+ Material : glass
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  5.36002 keV    e-  544.294 keV    e+  522.797 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 10     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__plexiglass
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.78478 keV    e-  391.667 keV    e+  378.733 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 11     used in the geometry : Yes     recalculation needed : No 
+ Material : RTV
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.9385 keV    e-  351.763 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 12     used in the geometry : Yes     recalculation needed : No 
+ Material : SBR
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.31517 keV    e-  335.609 keV    e+  326.713 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 13     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__copper
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  24.7837 keV    e-  1.39369 MeV    e+  1.32079 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 14     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__delrin
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  3.17444 keV    e-  430.279 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 15     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__mu_metal
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  23.9653 keV    e-  1.42206 MeV    e+  1.32969 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 16     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__beryllium-copper
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  23.6456 keV    e-  1.32079 MeV    e+  1.2517 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 17     used in the geometry : Yes     recalculation needed : No 
+ Material : wire_metal
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  21.2365 keV    e-  1.30317 MeV    e+  1.235 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 18     used in the geometry : Yes     recalculation needed : No 
+ Material : ENVINET_PS_scintillator
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  358.922 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    calorimeter
+
+Index : 19     used in the geometry : Yes     recalculation needed : No 
+ Material : Dubna_PS_scintillator
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  358.922 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    calorimeter
+
+Index : 20     used in the geometry : Yes     recalculation needed : No 
+ Material : bb_source_material.basic
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.56055 keV    e-  70.6589 keV    e+  450.99 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 21     used in the geometry : Yes     recalculation needed : No 
+ Material : tracking_gas
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+Index : 22     used in the geometry : Yes     recalculation needed : No 
+ Material : wire_metal
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  14.8765 keV    e-  736.348 keV    e+  1.235 MeV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+Index : 23     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__copper
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  17.1297 keV    e-  787.499 keV    e+  1.32079 MeV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+Index : 24     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__delrin
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  270.707 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+====================================================================
+
+In reset: finished conversion, file closed 
+=================================
+FINISHED simulation, STARTING analysis!
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.16/00                  https://root.cern |
+  |                               (c) 1995-2018, The ROOT Team |
+  | Built for linuxx8664gcc on Jan 23 2019, 09:06:13           |
+  | From tags/v6-16-00@v6-16-00                                |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+
+Processing /sps/nemo/scratch/ktrofimi/Attempt/data_folder/Tl208_dif_files/45/analyze.cpp...
+Collection name='TObjArray', class='TObjArray', size=100
+ *Br    0 :reco.passes_two_calorimeters : reco.passes_two_calorimeters/O      *
+*Entries :     1000 : Total  Size=       1673 bytes  File Size  =        340 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.24     *
+*............................................................................*
+ *Br    1 :reco.passes_two_plus_calos : reco.passes_two_plus_calos/O          *
+*Entries :     1000 : Total  Size=       1663 bytes  File Size  =        313 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.51     *
+*............................................................................*
+ *Br    2 :reco.passes_two_clusters : reco.passes_two_clusters/O              *
+*Entries :     1000 : Total  Size=       1653 bytes  File Size  =        291 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.77     *
+*............................................................................*
+ *Br    3 :reco.passes_two_tracks : reco.passes_two_tracks/O                  *
+*Entries :     1000 : Total  Size=       1643 bytes  File Size  =        293 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.74     *
+*............................................................................*
+ *Br    4 :reco.passes_associated_calorimeters :                              *
+*         | reco.passes_associated_calorimeters/O                            *
+*Entries :     1000 : Total  Size=       1708 bytes  File Size  =        186 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.96     *
+*............................................................................*
+ *Br    5 :reco.calorimeter_hit_count : reco.calorimeter_hit_count/I          *
+*Entries :     1000 : Total  Size=       4669 bytes  File Size  =        907 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.52     *
+*............................................................................*
+ *Br    6 :reco.cluster_count : reco.cluster_count/I                          *
+*Entries :     1000 : Total  Size=       4629 bytes  File Size  =        763 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.36     *
+*............................................................................*
+ *Br    7 :reco.track_count : reco.track_count/I                              *
+*Entries :     1000 : Total  Size=       4619 bytes  File Size  =        761 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.37     *
+*............................................................................*
+ *Br    8 :reco.associated_track_count : reco.associated_track_count/I        *
+*Entries :     1000 : Total  Size=       4674 bytes  File Size  =        637 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   6.44     *
+*............................................................................*
+ *Br    9 :reco.small_cluster_count : reco.small_cluster_count/I              *
+*Entries :     1000 : Total  Size=       4659 bytes  File Size  =        312 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  13.13     *
+*............................................................................*
+ *Br   10 :reco.delayed_hit_count : reco.delayed_hit_count/I                  *
+*Entries :     1000 : Total  Size=       4649 bytes  File Size  =        168 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  24.38     *
+*............................................................................*
+ *Br   11 :reco.number_of_electrons : reco.number_of_electrons/I              *
+*Entries :     1000 : Total  Size=       4659 bytes  File Size  =        634 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   6.46     *
+*............................................................................*
+ *Br   12 :reco.electron_charges : vector<int>                                *
+*Entries :     1000 : Total  Size=      16776 bytes  File Size  =       3272 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.96     *
+*............................................................................*
+ *Br   13 :reco.number_of_gammas : reco.number_of_gammas/I                    *
+*Entries :     1000 : Total  Size=       4644 bytes  File Size  =        725 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.65     *
+*............................................................................*
+ *Br   14 :reco.alpha_count : reco.alpha_count/I                              *
+*Entries :     1000 : Total  Size=       4619 bytes  File Size  =        162 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  25.25     *
+*............................................................................*
+ *Br   15 :reco.total_calorimeter_energy : reco.total_calorimeter_energy/D    *
+*Entries :     1000 : Total  Size=       8692 bytes  File Size  =       7487 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.08     *
+*............................................................................*
+ *Br   16 :reco.higher_electron_energy : reco.higher_electron_energy/D        *
+*Entries :     1000 : Total  Size=       8682 bytes  File Size  =       4477 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.81     *
+*............................................................................*
+ *Br   17 :reco.lower_electron_energy : reco.lower_electron_energy/D          *
+*Entries :     1000 : Total  Size=       8677 bytes  File Size  =        537 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  15.08     *
+*............................................................................*
+ *Br   18 :reco.electron_energies : vector<double>                            *
+*Entries :     1000 : Total  Size=      18901 bytes  File Size  =       7718 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.38     *
+*............................................................................*
+ *Br   19 :reco.gamma_energies : vector<double>                               *
+*Entries :     1000 : Total  Size=      26246 bytes  File Size  =      15810 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.63     *
+*............................................................................*
+ *Br   20 :reco.highest_gamma_energy : reco.highest_gamma_energy/D            *
+*Entries :     1000 : Total  Size=       8672 bytes  File Size  =       7230 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.12     *
+*............................................................................*
+ *Br   21 :reco.electron_track_lengths : vector<double>                       *
+*Entries :     1000 : Total  Size=      18926 bytes  File Size  =       7767 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.36     *
+*............................................................................*
+ *Br   22 :reco.electron_hit_counts : vector<int>                             *
+*Entries :     1000 : Total  Size=      16791 bytes  File Size  =       3700 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.39     *
+*............................................................................*
+ *Br   23 :reco.first_vertex_x : reco.first_vertex_x/D                        *
+*Entries :     1000 : Total  Size=       8642 bytes  File Size  =        289 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  28.00     *
+*............................................................................*
+ *Br   24 :reco.first_vertex_y : reco.first_vertex_y/D                        *
+*Entries :     1000 : Total  Size=       8642 bytes  File Size  =        379 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  21.35     *
+*............................................................................*
+ *Br   25 :reco.first_vertex_z : reco.first_vertex_z/D                        *
+*Entries :     1000 : Total  Size=       8642 bytes  File Size  =        396 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  20.44     *
+*............................................................................*
+ *Br   26 :reco.second_vertex_x : reco.second_vertex_x/D                      *
+*Entries :     1000 : Total  Size=       8647 bytes  File Size  =        314 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  25.78     *
+*............................................................................*
+ *Br   27 :reco.second_vertex_y : reco.second_vertex_y/D                      *
+*Entries :     1000 : Total  Size=       8647 bytes  File Size  =        383 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  21.13     *
+*............................................................................*
+ *Br   28 :reco.second_vertex_z : reco.second_vertex_z/D                      *
+*Entries :     1000 : Total  Size=       8647 bytes  File Size  =        394 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  20.54     *
+*............................................................................*
+ *Br   29 :reco.first_proj_vertex_y : reco.first_proj_vertex_y/D              *
+*Entries :     1000 : Total  Size=       8667 bytes  File Size  =        402 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  20.14     *
+*............................................................................*
+ *Br   30 :reco.first_proj_vertex_z : reco.first_proj_vertex_z/D              *
+*Entries :     1000 : Total  Size=       8667 bytes  File Size  =        401 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  20.19     *
+*............................................................................*
+ *Br   31 :reco.second_proj_vertex_y : reco.second_proj_vertex_y/D            *
+*Entries :     1000 : Total  Size=       8672 bytes  File Size  =        404 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  20.05     *
+*............................................................................*
+ *Br   32 :reco.second_proj_vertex_z : reco.second_proj_vertex_z/D            *
+*Entries :     1000 : Total  Size=       8672 bytes  File Size  =        401 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  20.20     *
+*............................................................................*
+ *Br   33 :reco.vertex_separation : reco.vertex_separation/D                  *
+*Entries :     1000 : Total  Size=       8657 bytes  File Size  =        407 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  19.89     *
+*............................................................................*
+ *Br   34 :reco.foil_projection_separation : reco.foil_projection_separation/D*
+*Entries :     1000 : Total  Size=       8702 bytes  File Size  =        397 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  20.42     *
+*............................................................................*
+ *Br   35 :reco.projection_distance_xy : reco.projection_distance_xy/D        *
+*Entries :     1000 : Total  Size=       8682 bytes  File Size  =        396 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  20.46     *
+*............................................................................*
+ *Br   36 :reco.foil_vertex_count : reco.foil_vertex_count/I                  *
+*Entries :     1000 : Total  Size=       4649 bytes  File Size  =        146 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  28.05     *
+*............................................................................*
+ *Br   37 :reco.vertices_in_tracker : reco.vertices_in_tracker/I              *
+*Entries :     1000 : Total  Size=       4659 bytes  File Size  =        148 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  27.69     *
+*............................................................................*
+ *Br   38 :reco.electrons_from_foil : vector<bool>                            *
+*Entries :     1000 : Total  Size=      15201 bytes  File Size  =       3098 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.72     *
+*............................................................................*
+ *Br   39 :reco.electron_vertex_x : vector<double>                            *
+*Entries :     1000 : Total  Size=      18901 bytes  File Size  =       4105 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.47     *
+*............................................................................*
+ *Br   40 :reco.electron_vertex_y : vector<double>                            *
+*Entries :     1000 : Total  Size=      18901 bytes  File Size  =       7644 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.40     *
+*............................................................................*
+ *Br   41 :reco.electron_vertex_z : vector<double>                            *
+*Entries :     1000 : Total  Size=      18901 bytes  File Size  =       7914 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.32     *
+*............................................................................*
+ *Br   42 :reco.electron_dir_x : vector<double>                               *
+*Entries :     1000 : Total  Size=      18886 bytes  File Size  =       7913 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.32     *
+*............................................................................*
+ *Br   43 :reco.electron_dir_y : vector<double>                               *
+*Entries :     1000 : Total  Size=      18886 bytes  File Size  =       7931 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.31     *
+*............................................................................*
+ *Br   44 :reco.electron_dir_z : vector<double>                               *
+*Entries :     1000 : Total  Size=      18886 bytes  File Size  =       7960 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.30     *
+*............................................................................*
+ *Br   45 :reco.electron_proj_vertex_x : vector<double>                       *
+*Entries :     1000 : Total  Size=      18926 bytes  File Size  =       3428 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.35     *
+*............................................................................*
+ *Br   46 :reco.electron_proj_vertex_y : vector<double>                       *
+*Entries :     1000 : Total  Size=      18926 bytes  File Size  =       7946 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.31     *
+*............................................................................*
+ *Br   47 :reco.electron_proj_vertex_z : vector<double>                       *
+*Entries :     1000 : Total  Size=      18926 bytes  File Size  =       7960 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.31     *
+*............................................................................*
+ *Br   48 :reco.alpha_vertex_x : vector<double>                               *
+*Entries :     1000 : Total  Size=      14694 bytes  File Size  =       1816 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.79     *
+*............................................................................*
+ *Br   49 :reco.alpha_vertex_y : vector<double>                               *
+*Entries :     1000 : Total  Size=      14694 bytes  File Size  =       1824 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.76     *
+*............................................................................*
+ *Br   50 :reco.alpha_vertex_z : vector<double>                               *
+*Entries :     1000 : Total  Size=      14694 bytes  File Size  =       1827 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.74     *
+*............................................................................*
+ *Br   51 :reco.alpha_dir_x : vector<double>                                  *
+*Entries :     1000 : Total  Size=      14679 bytes  File Size  =       1810 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.82     *
+*............................................................................*
+ *Br   52 :reco.alpha_dir_y : vector<double>                                  *
+*Entries :     1000 : Total  Size=      14679 bytes  File Size  =       1807 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.83     *
+*............................................................................*
+ *Br   53 :reco.alpha_dir_z : vector<double>                                  *
+*Entries :     1000 : Total  Size=      14679 bytes  File Size  =       1810 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.82     *
+*............................................................................*
+ *Br   54 :reco.alpha_proj_vertex_x : vector<double>                          *
+*Entries :     1000 : Total  Size=      14719 bytes  File Size  =       1764 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   8.02     *
+*............................................................................*
+ *Br   55 :reco.alpha_proj_vertex_y : vector<double>                          *
+*Entries :     1000 : Total  Size=      14719 bytes  File Size  =       1819 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.78     *
+*............................................................................*
+ *Br   56 :reco.alpha_proj_vertex_z : vector<double>                          *
+*Entries :     1000 : Total  Size=      14719 bytes  File Size  =       1823 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.76     *
+*............................................................................*
+ *Br   57 :reco.alphas_from_foil : vector<bool>                               *
+*Entries :     1000 : Total  Size=      14662 bytes  File Size  =       1853 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.61     *
+*............................................................................*
+ *Br   58 :reco.edgemost_vertex : reco.edgemost_vertex/D                      *
+*Entries :     1000 : Total  Size=       8647 bytes  File Size  =       4040 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.00     *
+*............................................................................*
+ *Br   59 :reco.topology_1e1gamma : reco.topology_1e1gamma/O                  *
+*Entries :     1000 : Total  Size=       1643 bytes  File Size  =        322 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.40     *
+*............................................................................*
+ *Br   60 :reco.topology_1e1alpha : reco.topology_1e1alpha/O                  *
+*Entries :     1000 : Total  Size=       1643 bytes  File Size  =        134 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   8.18     *
+*............................................................................*
+ *Br   61 :reco.topology_1engamma : reco.topology_1engamma/O                  *
+*Entries :     1000 : Total  Size=       1643 bytes  File Size  =        350 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.13     *
+*............................................................................*
+ *Br   62 :reco.topology_2e : reco.topology_2e/O                              *
+*Entries :     1000 : Total  Size=       1613 bytes  File Size  =        167 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   6.53     *
+*............................................................................*
+ *Br   63 :reco.topology_1e : reco.topology_1e/O                              *
+*Entries :     1000 : Total  Size=       1613 bytes  File Size  =        193 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   5.65     *
+*............................................................................*
+ *Br   64 :reco.angle_between_tracks : reco.angle_between_tracks/D            *
+*Entries :     1000 : Total  Size=       8672 bytes  File Size  =        411 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  19.71     *
+*............................................................................*
+ *Br   65 :reco.same_side_of_foil : reco.same_side_of_foil/D                  *
+*Entries :     1000 : Total  Size=       8657 bytes  File Size  =        221 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  36.63     *
+*............................................................................*
+ *Br   66 :reco.first_track_direction_x : reco.first_track_direction_x/D      *
+*Entries :     1000 : Total  Size=       8687 bytes  File Size  =        416 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  19.48     *
+*............................................................................*
+ *Br   67 :reco.first_track_direction_y : reco.first_track_direction_y/D      *
+*Entries :     1000 : Total  Size=       8687 bytes  File Size  =        415 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  19.52     *
+*............................................................................*
+ *Br   68 :reco.first_track_direction_z : reco.first_track_direction_z/D      *
+*Entries :     1000 : Total  Size=       8687 bytes  File Size  =        415 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  19.52     *
+*............................................................................*
+ *Br   69 :reco.second_track_direction_x : reco.second_track_direction_x/D    *
+*Entries :     1000 : Total  Size=       8692 bytes  File Size  =        416 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  19.48     *
+*............................................................................*
+ *Br   70 :reco.second_track_direction_y : reco.second_track_direction_y/D    *
+*Entries :     1000 : Total  Size=       8692 bytes  File Size  =        418 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  19.39     *
+*............................................................................*
+ *Br   71 :reco.second_track_direction_z : reco.second_track_direction_z/D    *
+*Entries :     1000 : Total  Size=       8692 bytes  File Size  =        417 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  19.43     *
+*............................................................................*
+ *Br   72 :reco.internal_probability : reco.internal_probability/D            *
+*Entries :     1000 : Total  Size=       8672 bytes  File Size  =       3558 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.28     *
+*............................................................................*
+ *Br   73 :reco.external_probability : reco.external_probability/D            *
+*Entries :     1000 : Total  Size=       8672 bytes  File Size  =       3645 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.22     *
+*............................................................................*
+ *Br   74 :reco.foil_projected_internal_probability :                         *
+*         | reco.foil_projected_internal_probability/D                       *
+*Entries :     1000 : Total  Size=       8747 bytes  File Size  =       3611 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.25     *
+*............................................................................*
+ *Br   75 :reco.foil_projected_external_probability :                         *
+*         | reco.foil_projected_external_probability/D                       *
+*Entries :     1000 : Total  Size=       8747 bytes  File Size  =       3658 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   2.22     *
+*............................................................................*
+ *Br   76 :reco.calo_hit_time_separation : reco.calo_hit_time_separation/D    *
+*Entries :     1000 : Total  Size=       8692 bytes  File Size  =       7483 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.08     *
+*............................................................................*
+ *Br   77 :reco.delayed_track_time : vector<double>                           *
+*Entries :     1000 : Total  Size=      14714 bytes  File Size  =       1821 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.77     *
+*............................................................................*
+ *Br   78 :reco.delayed_cluster_hit_count : vector<int>                       *
+*Entries :     1000 : Total  Size=      14725 bytes  File Size  =       1745 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   8.10     *
+*............................................................................*
+ *Br   79 :reco.foil_alpha_count : reco.foil_alpha_count/I                    *
+*Entries :     1000 : Total  Size=       4644 bytes  File Size  =        145 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  28.24     *
+*............................................................................*
+ *Br   80 :reco.alpha_track_length : reco.alpha_track_length/D                *
+*Entries :     1000 : Total  Size=       8662 bytes  File Size  =        238 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  34.02     *
+*............................................................................*
+ *Br   81 :reco.proj_track_length_alpha : reco.proj_track_length_alpha/D      *
+*Entries :     1000 : Total  Size=       8687 bytes  File Size  =        243 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  33.34     *
+*............................................................................*
+ *Br   82 :reco.alpha_crosses_foil : reco.alpha_crosses_foil/O                *
+*Entries :     1000 : Total  Size=       1648 bytes  File Size  =        125 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   8.78     *
+*............................................................................*
+ *Br   83 :reco.electron_hits_mainwall : vector<bool>                         *
+*Entries :     1000 : Total  Size=      15216 bytes  File Size  =       3216 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.55     *
+*............................................................................*
+ *Br   84 :reco.electron_hits_xwall : vector<bool>                            *
+*Entries :     1000 : Total  Size=      15201 bytes  File Size  =       3210 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.56     *
+*............................................................................*
+ *Br   85 :reco.electron_hits_gveto : vector<bool>                            *
+*Entries :     1000 : Total  Size=      15201 bytes  File Size  =       3098 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.72     *
+*............................................................................*
+ *Br   86 :reco.gamma_hits_mainwall : vector<bool>                            *
+*Entries :     1000 : Total  Size=      16121 bytes  File Size  =       3963 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.93     *
+*............................................................................*
+ *Br   87 :reco.gamma_hits_xwall : vector<bool>                               *
+*Entries :     1000 : Total  Size=      16106 bytes  File Size  =       3817 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.07     *
+*............................................................................*
+ *Br   88 :reco.gamma_hits_gveto : vector<bool>                               *
+*Entries :     1000 : Total  Size=      16106 bytes  File Size  =       3764 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.13     *
+*............................................................................*
+ *Br   89 :reco.gamma_fractions_mainwall : vector<double>                     *
+*Entries :     1000 : Total  Size=      26296 bytes  File Size  =       7143 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   3.60     *
+*............................................................................*
+ *Br   90 :reco.gamma_fractions_xwall : vector<double>                        *
+*Entries :     1000 : Total  Size=      26281 bytes  File Size  =       6153 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.18     *
+*............................................................................*
+ *Br   91 :reco.gamma_fractions_gveto : vector<double>                        *
+*Entries :     1000 : Total  Size=      26281 bytes  File Size  =       5240 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   4.91     *
+*............................................................................*
+ *Br   92 :true.highest_primary_energy : true.highest_primary_energy/D        *
+*Entries :     1000 : Total  Size=       8682 bytes  File Size  =        669 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  12.11     *
+*............................................................................*
+ *Br   93 :true.second_primary_energy : true.second_primary_energy/D          *
+*Entries :     1000 : Total  Size=       8677 bytes  File Size  =       4152 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.95     *
+*............................................................................*
+ *Br   94 :true.higher_particle_type : true.higher_particle_type/I            *
+*Entries :     1000 : Total  Size=       4664 bytes  File Size  =        162 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=  25.30     *
+*............................................................................*
+ *Br   95 :true.lower_particle_type : true.lower_particle_type/I              *
+*Entries :     1000 : Total  Size=       4659 bytes  File Size  =        544 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.53     *
+*............................................................................*
+ *Br   96 :true.total_energy : true.total_energy/D                            *
+*Entries :     1000 : Total  Size=       8632 bytes  File Size  =       7562 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.07     *
+*............................................................................*
+ *Br   97 :true.vertex_x : true.vertex_x/D                                    *
+*Entries :     1000 : Total  Size=       8612 bytes  File Size  =       5696 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.42     *
+*............................................................................*
+ *Br   98 :true.vertex_y : true.vertex_y/D                                    *
+*Entries :     1000 : Total  Size=       8612 bytes  File Size  =       7112 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.14     *
+*............................................................................*
+ *Br   99 :true.vertex_z : true.vertex_z/D                                    *
+*Entries :     1000 : Total  Size=       8612 bytes  File Size  =       7081 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   1.14     *
+*............................................................................*
+
+EFFICIENCIES :
+eps1 = 23.4% +- 1.52971%
+eps2 = 2.4% +- 0.489898%
+eps3 = 0.1% +- 0.1%
+eps4 = 0% +- 0%
+PopupLogo, XOpenDisplay failed
+****************************************************************
+*                      SLURM Batch System                      *
+*           IN2P3 Computing Centre, Villeurbanne FR            *
+****************************************************************
+Date: Thu Jun 27 04:42:07 CEST 2024
+Job informations can be found using these commands:
+Accounting:
+sacct -j 17156903
+Efficiency:
+seff 17156903
+****************************************************************
