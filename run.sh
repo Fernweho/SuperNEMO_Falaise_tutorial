@@ -27,8 +27,12 @@ echo "STARTING simulation!"
 flsimulate -c %DATA_FOLDER/%USER_FOLDNAME/%f/simu_%ISO.conf -o %DATA_FOLDER/%USER_FOLDNAME/%f/simu_%ISO.brio
 flreconstruct -i %DATA_FOLDER/%USER_FOLDNAME/%f/simu_%ISO.brio -p /sps/nemo/sw/Falaise/install_develop/share//Falaise-4.1.0/resources/snemo/demonstrator/reconstruction/official-2.0.0.conf -o %DATA_FOLDER/%USER_FOLDNAME/%f/reco_%ISO.brio
 flreconstruct -i %DATA_FOLDER/%USER_FOLDNAME/%f/reco_%ISO.brio -p %SENSITIVITY_MODULE/build/SensitivityModuleExample.conf
+mv sensitivity.root %DATA_FOLDER/%USER_FOLDNAME/%f/sensitivity.root
 
 echo "================================="
 echo "FINISHED simulation, STARTING analysis!"
 
 root %DATA_FOLDER/%USER_FOLDNAME/%f/analyze.cpp
+
+rm %DATA_FOLDER/%USER_FOLDNAME/%f/simu_%ISO.brio
+rm %DATA_FOLDER/%USER_FOLDNAME/%f/reco_%ISO.brio

@@ -1,6 +1,6 @@
 #!/bin/bash
-export G4LEDATA=/sps/nemo/sw/BxCppDev/opt/g4datasets-9.6.4/share/Geant4Datasets-9.6.4/data/G4EMLOW6.32
-source /sps/nemo/sw/config/supernemo_profile_1.bash
+#source ${THRONG_DIR}/config/supernemo_profile.bash
+#export G4LEDATA=/sps/nemo/sw/BxCppDev/opt/g4datasets-9.6.4/share/Geant4Datasets-9.6.4/data/G4EMLOW6.32
 
 echo "Choose the isotope: "
 echo "Se82_0nubb, Se82_2nubb, Bi214 or Tl208"
@@ -42,6 +42,12 @@ echo "	"
 echo 	"Sending request for Run $USER_FOLDNAME!"
 echo    "==========================="
 
+sed 	    -e "s|%ISO|$ISO|g" \
+            -e "s|%USER_FOLDNAME|$USER_FOLDNAME|g" \
+            -e "s|%MAIN_FOLDER|$MAIN_FOLDER|g" \
+            -e "s|%DATA_FOLDER|$DATA_FOLDER|g" \
+            -e "s|%SENSITIVITY_MODULE|$SENSITIVITY_MODULE|g" \
+            $MAIN_FOLDER/Analyze.sh > $MAIN_FOLDER/Analyze.sh
 
 for (( f=0; f < $FILES; f++  )) # iterate over number of files 
 do

@@ -1,5 +1,1 @@
-Efficiencies from /sps/nemo/scratch/ktrofimi/Attempt/data_folder/Tl208_dif_files/99/:
-eps1 = 24.1% +- 1.55242%
-eps2 = 3% +- 0.547723%
-eps3 = 0.2% +- 0.141421%
-eps4 = 0% +- 0%
+Efficiencies from /sps/nemo/scratch/ktrofimi/Attempt/data_folder/just_try/9/:
