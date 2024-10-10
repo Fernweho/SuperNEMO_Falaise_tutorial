@@ -1,0 +1,891 @@
+slurmstepd: error: couldn't chdir to `/sps/nemo/scratch/ktrofimi/Attempt/data_folder/whaa/$TMPDIR': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/sps/nemo/scratch/ktrofimi/Attempt/data_folder/whaa/$TMPDIR': No such file or directory: going to /tmp instead
+[notice:virtual void mctools::g4::manager::_init_core():1186] Main manager settings...
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'calo_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'tracker_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'source_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'all_details' is supported.
+[notice:void mctools::g4::manager::_init_seeds():1609] Using registered seed for 'MGR' : 19760819
+[notice:void mctools::g4::manager::_init_seeds():1618] Using registered seed for 'VG' : 576071082
+[notice:void mctools::g4::manager::_init_seeds():1627] Using registered seed for 'EG' : 262162932
+[notice:void mctools::g4::manager::_init_seeds():1636] Using registered seed for 'SHPF' : 632806451
+[notice:virtual void mctools::g4::manager::_init_prngs():1786] Setting the HepRandomEngine to 'mctools::g4::g4_prng'...
+[notice:virtual void mctools::g4::manager::_init_geometry():1356] Geometry manager settings...
+[notice:virtual void mctools::g4::manager::_init_geometry():1358] Use external geometry manager...
+[notice:virtual void mctools::g4::manager::_init_vertex_generator():1389] Vertex generator settings...
+[notice:virtual void mctools::g4::manager::_init_event_generator():1438] Primary event generator settings...
+HepRandomEngine::put called -- no effect!
+[notice:virtual void mctools::g4::manager::_init_detector_construction():1478] Detector construction...
+[notice:virtual void mctools::g4::manager::_init_physics_list():1492] Physics list initialization...
+[notice:virtual void mctools::g4::manager::_init_run_action():1506] Run action initialization...
+[notice:virtual void mctools::g4::manager::_init_event_action():1532] Event action initialization...
+[notice:virtual void mctools::g4::manager::_init_primary_generator_action():1545] Primary generator action initialization...
+[notice:virtual void mctools::g4::manager::_init_tracking_action():1564] Tracking action initialization...
+[notice:virtual void mctools::g4::manager::_init_stepping_action():1574] Stepping action initialization...
+[notice:virtual void mctools::g4::manager::_init_stacking_action():1584] Stacking action initialization...
+[notice:virtual void mctools::g4::manager::initialize_impl():952] G4 kernel initialization...
+[notice] SHPF: Step hit processor: 'calorimeter.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'calorimeter.hit_processor'
+[notice] |-- Hit category       : 'calo'
+[notice] |-- Sensitive category : 'calorimeter_SD'
+[notice] |-- Geometry manager   : 0x1dc2370
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'calorimeter_SD'
+[notice] |-- Private pool : 0x36ae9d0
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x36ae9d0
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'calorimeter_block'
+[notice] |-- Mapping    : 0x1dc2730
+[notice] |-- Categories : 0x1dc26c8 [54]
+[notice] `-- Calorimeter block type : 1302
+[notice] SHPF: Step hit processor: 'gg.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'gg.hit_processor'
+[notice] |-- Hit category       : 'gg'
+[notice] |-- Sensitive category : 'tracker_SD'
+[notice] |-- Geometry manager   : 0x1dc2370
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'tracker_SD'
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[notice] SHPF: Step hit processor: 'gveto.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'gveto.hit_processor'
+[notice] |-- Hit category       : 'gveto'
+[notice] |-- Sensitive category : 'gveto_SD'
+[notice] |-- Geometry manager   : 0x1dc2370
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'gveto_SD'
+[notice] |-- Private pool : 0x3966680
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x3966680
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'gveto_block'
+[notice] |-- Mapping    : 0x1dc2730
+[notice] |-- Categories : 0x1dc26c8 [54]
+[notice] `-- Calorimeter block type : 1252
+[notice] SHPF: Step hit processor: 'xcalorimeter.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'xcalorimeter.hit_processor'
+[notice] |-- Hit category       : 'xcalo'
+[notice] |-- Sensitive category : 'xcalorimeter_SD'
+[notice] |-- Geometry manager   : 0x1dc2370
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'xcalorimeter_SD'
+[notice] |-- Private pool : 0x3706fa0
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x3706fa0
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'xcalo_block'
+[notice] |-- Mapping    : 0x1dc2730
+[notice] |-- Categories : 0x1dc26c8 [54]
+[notice] `-- Calorimeter block type : 1232
+[warning:void mctools::g4::em_field_g4_stuff::initialize(const datatools::properties&):256] Using default EM field stepper for field labelled 'module'!
+[warning:void mctools::g4::em_field_g4_stuff::initialize(const datatools::properties&):333] Field labelled 'module' is propagated to daughter volumes!
+[notice:static void mctools::g4::manager_parameters::setup(const mctools::g4::manager_parameters&, mctools::g4::manager&):269] Simulation manager has been configured and initialized.
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+[notice:void mctools::g4::manager::run_simulation():188] Starting the simulation...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1051] Entering batch mode...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1063] Entering automatic mode...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1099] G4 command = /run/beamOn 1000000000
+HepRandomEngine::put called -- no effect!
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1112] Record the final PRNG internal states after the session has stopped normaly.
+[notice:void mctools::g4::manager::run_simulation():190] Simulation stops !
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.simulation' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.variantService' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.services' will ignore meta 'flsimulate::section' !
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_CAT'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'TrackFit'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_TrackFit'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_ChargedParticleTracking'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'GammaTracking'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_GammaClustering'...
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.simulation' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.variantService' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.services' will ignore meta 'flsimulate::section' !
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):32] maxDelayedHitTimeGap  = 10 us
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):33] classifyPromptHits_   = true
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):34] classifyDelayedHits_  = true
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):35] isSplitChamber_       = true
+CAT::clusterizer::initialize: Entering...
+CAT::clusterizer::readDstProper: Entering...
+CAT::clusterizer::readDstProper: SuperNemo kind of data
+CAT::clusterizer::readDstProper: small radius 2 mm
+CAT::clusterizer::readDstProper: tangent phi 20
+CAT::clusterizer::readDstProper: tangent theta 160
+CAT::clusterizer::readDstProper: small number 0.1 mm
+CAT::clusterizer::readDstProper: quadrant angle 90
+CAT::clusterizer::readDstProper: ratio 10000
+CAT::clusterizer::readDstProper: compatibility distance 4
+CAT::clusterizer::readDstProper: maximum chi2 3
+CAT::clusterizer::readDstProper: probmin 0
+CAT::clusterizer::readDstProper: first event number -1
+CAT::clusterizer::readDstProper: cell pitch:  43.95 mm
+CAT::clusterizer::readDstProper: verbosity print level: 2
+CAT::clusterizer::readDstProper: Done.
+CAT::clusterizer::initialize: Done.
+CAT::sequentiator::readDstProper: SuperNemo kind of data
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1130:0.6.7]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : 1
+|   |   |-- Translation : (0.125,-1587.64,1234.65)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 106.394 mm
+|-- XY-distance   : 70.5166 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 1
+|-- Geometry ID : [1302:0.1.7.6.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'calo'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (435,-723.493,129.188)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 110.999 mm
+|-- XY-distance   : 73.5686 mm
+|-- Edge          : true
+`-- Best      : true
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1130:0.27.0]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (0.125,1392.23,-1068.4)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 302.676 mm
+|-- XY-distance   : 96.0468 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 1
+|-- Geometry ID : [1130:0.28.0]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'first'
+|-- Extrapolation : 'helix'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (0.125,1410.31,-1077.36)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 312.141 mm
+|-- XY-distance   : 99.109 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1130:0.8.6]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-0.125,-1377.32,801.142)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 62.5016 mm
+|-- XY-distance   : 59.2349 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1130:0.1.5]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-0.125,-2245.45,392.528)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 52.5671 mm
+|-- XY-distance   : 52.3016 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1130:0.15.6]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-0.125,-402.143,901.603)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 64.6083 mm
+|-- XY-distance   : 61.7782 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 1
+|-- Geometry ID : [1302:0.0.7.10.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'calo'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-435,-635.824,1054.06)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 37.3379 mm
+|-- XY-distance   : 35.7024 mm
+|-- Edge          : false
+`-- Best      : true
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1100:0]
+|-- Auxiliaries : <empty>
+|-- Category      : 'reference_source_plane'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-1,-2054.41,-362.176)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 124.05 mm
+|-- XY-distance   : 122.385 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 1
+|-- Geometry ID : [1130:0.3.2]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-0.125,-2057.72,-361.608)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 127.523 mm
+|-- XY-distance   : 125.812 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1100:0]
+|-- Auxiliaries : <empty>
+|-- Category      : 'reference_source_plane'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-1,-1660.65,-429.574)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 150.193 mm
+|-- XY-distance   : 148.177 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 1
+|-- Geometry ID : [1130:0.6.2]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-0.125,-1657.34,-430.141)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 153.666 mm
+|-- XY-distance   : 151.604 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1130:0.6.3]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-0.125,-1637.26,-229.686)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 53.4355 mm
+|-- XY-distance   : 53.4254 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 1
+|-- Geometry ID : [1302:0.0.4.5.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'calo'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-435,-1302.88,-218.173)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 67.806 mm
+|-- XY-distance   : 67.7932 mm
+|-- Edge          : true
+`-- Best      : true
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1302:0.0.4.5.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'calo'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-435,-1301.96,-177.079)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 120.328 mm
+|-- XY-distance   : 66.373 mm
+|-- Edge          : true
+`-- Best      : true
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1302:0.0.4.5.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'calo'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-435,-1353.03,-233.428)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 52.7729 mm
+|-- XY-distance   : 29.1096 mm
+|-- Edge          : false
+`-- Best      : true
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1130:0.22.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (0.125,656.783,-957.485)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 105.543 mm
+|-- XY-distance   : 52.3196 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 1
+|-- Geometry ID : [1302:0.1.12.5.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'calo'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (435,623.604,-193.713)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 59.6089 mm
+|-- XY-distance   : 29.5493 mm
+|-- Edge          : false
+`-- Best      : true
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1130:0.13.7]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-0.125,-651.099,1100.95)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 64.4201 mm
+|-- XY-distance   : 63.4594 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 1
+|-- Geometry ID : [1302:0.0.8.10.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'calo'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-435,-406.242,1188.23)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 23.7347 mm
+|-- XY-distance   : 23.3808 mm
+|-- Edge          : true
+`-- Best      : true
+|-- Store       : (11)
+|-- Hit ID      : 0
+|-- Geometry ID : [1130:0.30.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'foil'
+|-- From          : 'first'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-0.125,1684.96,-872.022)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 59.0372 mm
+|-- XY-distance   : 57.9646 mm
+|-- Edge          : false
+`-- Best      : false
+|-- Store       : (11)
+|-- Hit ID      : 1
+|-- Geometry ID : [1302:0.0.16.3.1]
+|-- Auxiliaries : <empty>
+|-- Category      : 'calo'
+|-- From          : 'last'
+|-- Extrapolation : 'line'
+|-- Spot          : 
+|   |-- Store       : (1000)
+|   |-- Hit ID      : <none>
+|   |-- Geometry ID : <none>
+|   |-- Auxiliaries : <empty>
+|   |-- Dimension : 3
+|   |-- Placement : 
+|   |   |-- Number of items  = 1
+|   |   |-- Valid : true
+|   |   |-- Translation : (-435,1808.59,-776.584)
+|   |   |-- Euler Angles (ZYZ): Yes
+|   |   |   |-- Phi :   0 degree
+|   |   |   |-- Theta : 0 degree
+|   |   |   `-- Delta : 0 degree
+|   |-- X-error : 1 mm
+|   |-- Y-error : nan mm
+|   |-- Z-error : nan mm
+|   `-- Tolerance : 1e-07 mm
+|-- Distance      : 26.4505 mm
+|-- XY-distance   : 25.97 mm
+|-- Edge          : true
+`-- Best      : true
+[debug:falaise::exit_code FLReconstruct::do_pipeline(const FLReconstruct::FLReconstructParams&):181] Input module is terminated
+[notice:falaise::exit_code FLReconstruct::do_pipeline(const FLReconstruct::FLReconstructParams&):246] Number of processed input data records = 10
+CAT::clusterizer::finalize: Ending algorithm clusterizer...
+CAT::clusterizer::finalize: Initial events:  0
+CAT::clusterizer::finalize: Skipped events:  0 ( -nan %)
+CAT::clockable::dump: time of ' clusterizer: clusterize ' : 78.5 ms (100 %)
+CAT::clockable::dump: time of ' clusterizer: is good couplet ' : 13.774 ms (17.5465 %)
+CAT::clockable::dump: time of ' clusterizer: get near cells ' : 0.622 ms (0.792357 %)
+CAT::clockable::dump: time of ' clusterizer: prepare event ' : 0.305 ms (0.388535 %)
+CAT::clockable::dump: time of ' clusterizer: order cells ' : 0.035 ms (0.044586 %)
+CAT::clockable::dump: time of ' clusterizer: finalize ' : 0.024 ms (0.0305732 %)
+CAT::clockable::dump: time of ' clusterizer: setup_clusters ' : 0.005 ms (0.00636943 %)
+CAT::sequentiator::finalize: Ending algorithm sequentiator
+CAT::sequentiator::finalize: Initial events:  0
+CAT::sequentiator::finalize: Skipped events:  0 ( -nan %)
+CAT::clockable::dump: time of ' sequentiator: sequentiate ' : 89.866 ms (100 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence ' : 47.385 ms (52.7285 %)
+CAT::clockable::dump: time of ' sequentiator: evolve ' : 34.272 ms (38.1368 %)
+CAT::clockable::dump: time of ' sequentiator: clean up sequences ' : 32.275 ms (35.9146 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B ' : 31.347 ms (34.8819 %)
+CAT::clockable::dump: time of ' sequentiator: pick new cell ' : 27.897 ms (31.0429 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A ' : 24.795 ms (27.5911 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: evolve ' : 23.527 ms (26.1801 %)
+CAT::clockable::dump: time of ' sequentiator: manage copy sequence ' : 22.362 ms (24.8837 %)
+CAT::clockable::dump: time of ' sequentiator: make new sequence ' : 17.448 ms (19.4156 %)
+CAT::clockable::dump: time of ' sequentiator: make scenarios ' : 9.399 ms (10.4589 %)
+CAT::clockable::dump: time of ' sequentiator: can add family ' : 6.801 ms (7.56793 %)
+CAT::clockable::dump: time of ' sequentiator: can match ' : 3.827 ms (4.25856 %)
+CAT::clockable::dump: time of ' sequentiator: set free level ' : 2.966 ms (3.30047 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part C ' : 2.816 ms (3.13355 %)
+CAT::clockable::dump: time of ' sequentiator: copy sequence ' : 2.698 ms (3.00225 %)
+CAT::clockable::dump: time of ' sequentiator: interpret physics ' : 2.439 ms (2.71404 %)
+CAT::clockable::dump: time of ' sequentiator: add pair ' : 2.303 ms (2.5627 %)
+CAT::clockable::dump: time of ' sequentiator: direct out of foil ' : 1.853 ms (2.06196 %)
+CAT::clockable::dump: time of ' sequentiator: copy scenario ' : 1.65 ms (1.83607 %)
+CAT::clockable::dump: time of ' sequentiator: better scenario ' : 1.357 ms (1.51003 %)
+CAT::clockable::dump: time of ' sequentiator: copy to lfn ' : 1.235 ms (1.37427 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B: noc ' : 0.659 ms (0.733314 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B: set free level ' : 0.568 ms (0.632052 %)
+CAT::clockable::dump: time of ' sequentiator: calculate scenario ' : 0.179 ms (0.199185 %)
+CAT::clockable::dump: time of ' sequentiator: good first node ' : 0.07 ms (0.0778938 %)
+CAT::clockable::dump: time of ' sequentiator: make families ' : 0.061 ms (0.0678788 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part A ' : 0.046 ms (0.0511873 %)
+CAT::clockable::dump: time of ' sequentiator: get link index ' : 0.034 ms (0.0378341 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A: alpha ' : 0.008 ms (0.00890214 %)
+CAT::clockable::dump: time of ' sequentiator: there is free sequence beginning with ' : 0.008 ms (0.00890214 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A: beta ' : 0.007 ms (0.00778938 %)
+CAT::clockable::dump: time of ' sequentiator: direct scenarios out of foil ' : 0.005 ms (0.00556384 %)
+CAT::clockable::dump: time of ' sequentiator: finalize ' : 0 ms (0 %)
+CAT::clockable::dump: time of ' sequentiator: match gaps ' : 0 ms (0 %)
+CAT::clockable::dump: time of ' sequentiator: sequentiation ' : 0 ms (0 %)
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct.variantService' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct.services' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct.pipeline' will ignore meta 'flreconstruct::section' !
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'SensitivityModule'...
+Warning in <TClassTable::Add>: class timespec already in TClassTable
+malloc(): invalid size (unsorted)
+/var/spool/slurmd/job29419765/slurm_script: line 29: 3285279 Aborted                 (core dumped) flreconstruct -i /sps/nemo/scratch/ktrofimi/Attempt/data_folder/whaa/1/reco_Tl208_1.brio -p /sps/nemo/scratch/ktrofimi/Falaise_tutorial/SensitivityModule/build/SensitivityModuleExample.conf
+mv: cannot stat 'sensitivity.root': No such file or directory
+Error in <TFile::TFile>: file /tmp/./sensitivity.root does not exist
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x0000154b3dad89fa in wait4 () from /lib64/libc.so.6
+#1  0x0000154b3da4b243 in do_system () from /lib64/libc.so.6
+#2  0x0000154b3e48e29c in TUnixSystem::StackTrace() () from /sps/nemo/sw/redhat-9-x86_64/snsw/opt/root-6.26.06/bin/../lib/root/libCore.so.6.26
+#3  0x0000154b3e48b995 in TUnixSystem::DispatchSignals(ESignals) () from /sps/nemo/sw/redhat-9-x86_64/snsw/opt/root-6.26.06/bin/../lib/root/libCore.so.6.26
+#4  <signal handler called>
+#5  0x0000154b3e18a0f8 in ?? ()
+#6  0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum https://root.cern/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#5  0x0000154b3e18a0f8 in ?? ()
+#6  0x0000000000000000 in ?? ()
+===========================================================
+
+
+slurmstepd: error: run_script_as_user: couldn't change working dir to /sps/nemo/scratch/ktrofimi/Attempt/data_folder/whaa/$TMPDIR: No such file or directory
