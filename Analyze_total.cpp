@@ -4,37 +4,64 @@
 #include <TFile.h>
 #include <TTree.h>
 
-void analyze(const std::string& filePath, int& n_calos, int& n_electrons, double& calo_energy, bool& are_two_tracks, int& passed1, int& passed2, int& passed3, int& passed4, int& totalEntries)
+#include "./MiModule/include/MiEvent.h"
+R__LOAD_LIBRARY(./MiModule/lib/libMiModule.so);
+
+
+void analyze(const std::string& filePath, int& n_calos, int& n_electrons, double& calo_energy, int& are_two_tracks, int& passed1, int& passed2, int& passed3, int& passed4, int& totalEntries)
 {
     TFile* f = new TFile(filePath.c_str());
     if (!f || f->IsZombie()) {
         std::cerr << "Error opening file: " << filePath << std::endl;
         return;
     }
-
-    TTree* strom = (TTree*)(f->Get("Sensitivity"));
+    TTree* strom = (TTree*) f->Get("Event");
+    // TTree* strom = (TTree*)(f->Get("Sensitivity"));
+    MiEvent* Eve = new MiEvent();
     if (!strom) {
         std::cerr << "Error: TTree 'Sensitivity' not found in file: " << filePath << std::endl;
         return;
     }
-
-    strom->SetBranchAddress("reco.calorimeter_hit_count", &n_calos);
-    strom->SetBranchAddress("reco.passes_two_tracks", &are_two_tracks);
-    strom->SetBranchAddress("reco.number_of_electrons", &n_electrons);
-    strom->SetBranchAddress("reco.total_calorimeter_energy", &calo_energy);
+    strom->SetBranchAddress("Eventdata", &Eve);
+    // strom->SetBranchAddress("reco.calorimeter_hit_count", &n_calos);
+    // strom->SetBranchAddress("reco.passes_two_tracks", &are_two_tracks);
+    // strom->SetBranchAddress("reco.number_of_electrons", &n_electrons);
+    // strom->SetBranchAddress("reco.total_calorimeter_energy", &calo_energy);
 
     int N = strom->GetEntries();
+
+    int n_calo;
+
     totalEntries += N;
 
-    for (int i = 0; i < N; i++)
+    for (UInt_t i = 0; i < N; i++)
     {
         strom->GetEntry(i);
-        if (n_calos == 2) passed1++;
-        if (n_calos == 2 && are_two_tracks) passed2++;
-        if (n_calos == 2 && are_two_tracks && n_electrons == 2) passed3++;
-        if (n_calos == 2 && are_two_tracks && n_electrons == 2 && calo_energy > 2.0) passed4++;
-    }
+        n_calo = 0;
+        n_calos = 0;
+        n_electrons = 0;
+        calo_energy = 0.0;
 
+
+        are_two_tracks = Eve->getPTD()->getpartv()->size();
+
+        for(int j = 0; j < are_two_tracks; j++)
+        {
+            n_calo = Eve->getPTD()->getpartv()->at(j).getcalohitv()->size();
+            if(Eve->getPTD()->getpartv()->at(j).getcharge() == -1) n_electrons++;
+            for(int k = 0; k < n_calo; k++)
+            {
+                calo_energy += Eve->getPTD()->getpartv()->at(j).getcalohitv()->at(k).getE();
+            }
+            n_calos += n_calo;
+        }
+
+        if (n_calos == 2) passed1++;
+        if (n_calos == 2 && are_two_tracks ==2) passed2++;
+        if (n_calos == 2 && are_two_tracks ==2 && n_electrons == 2) passed3++;
+        if (n_calos == 2 && are_two_tracks ==2 && n_electrons == 2 && calo_energy > 2.0) passed4++;
+    }
+    delete Eve;
     delete f;
 }
 
@@ -49,8 +76,8 @@ int main(int argc, char* argv[])
     int num_files = std::stoi(argv[2]);
 
     int n_calos = 0, n_electrons = 0;
-    double calo_energy;
-    bool are_two_tracks;
+    double calo_energy = 0.0;
+    int are_two_tracks = 0;
 
     int passed1 = 0;
     int passed2 = 0;

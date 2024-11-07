@@ -12,7 +12,8 @@ read NUMEV
 DATA_FOLDER=/sps/nemo/scratch/ktrofimi/Attempt/data_folder
 ISO_FOLDER=/sps/nemo/scratch/ktrofimi/Attempt/Isotopes_configurations
 MAIN_FOLDER=/sps/nemo/scratch/ktrofimi/Attempt
-SENSITIVITY_MODULE=/sps/nemo/scratch/ktrofimi/Falaise_tutorial/SensitivityModule
+#SENSITIVITY_MODULE=/sps/nemo/scratch/ktrofimi/Falaise_tutorial/SensitivityModule
+MIRO_MODULE=/sps/nemo/scratch/ktrofimi/Attempt/MiModule/p_MiModule_v00.conf.in
 FAL=/sps/nemo/sw/snsw/2024/opt/falaise-5.1.2/bin
 
 echo "	"
@@ -46,7 +47,8 @@ sed 	    -e "s|%ISO|$ISO|g" \
             -e "s|%USER_FOLDNAME|$USER_FOLDNAME|g" \
             -e "s|%MAIN_FOLDER|$MAIN_FOLDER|g" \
             -e "s|%DATA_FOLDER|$DATA_FOLDER|g" \
-            -e "s|%SENSITIVITY_MODULE|$SENSITIVITY_MODULE|g" \
+            #-e "s|%SENSITIVITY_MODULE|$SENSITIVITY_MODULE|g" \
+            -e "s|%MIRO_MODULE|$MIRO_MODULE|g" \
             $MAIN_FOLDER/Analyze.sh > $MAIN_FOLDER/Analyze.sh
 
 for (( f=0; f < $FILES; f++  )) # iterate over number of files 
@@ -73,7 +75,8 @@ do
                     -e "s|%USER_FOLDNAME|$USER_FOLDNAME|g" \
                     -e "s|%MAIN_FOLDER|$MAIN_FOLDER|g" \
                     -e "s|%DATA_FOLDER|$DATA_FOLDER|g" \
-                    -e "s|%SENSITIVITY_MODULE|$SENSITIVITY_MODULE|g" \
+                    #-e "s|%SENSITIVITY_MODULE|$SENSITIVITY_MODULE|g" \
+                    -e "s|%MIRO_MODULE|$MIRO_MODULE|g" \
                     $MAIN_FOLDER/run.sh > $DATA_FOLDER/$USER_FOLDNAME/$f/run.sh 
 
         chmod 755 $DATA_FOLDER/$USER_FOLDNAME/$f/run.sh
