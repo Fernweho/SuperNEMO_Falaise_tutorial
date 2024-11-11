@@ -15,11 +15,11 @@ void analyze(const std::string& filePath, int& n_calos, int& n_electrons, double
         std::cerr << "Error opening file: " << filePath << std::endl;
         return;
     }
-    TTree* strom = (TTree*) f->Get("Event");
+    TTree* strom = (TTree*) f->Get("SimData");
     // TTree* strom = (TTree*)(f->Get("Sensitivity"));
     MiEvent* Eve = new MiEvent();
     if (!strom) {
-        std::cerr << "Error: TTree 'Sensitivity' not found in file: " << filePath << std::endl;
+        std::cerr << "Error: TTree 'Event' not found in file: " << filePath << std::endl;
         return;
     }
     strom->SetBranchAddress("Eventdata", &Eve);
@@ -87,7 +87,7 @@ int main(int argc, char* argv[])
     
     for (int f = 0; f < num_files; f++)
     {
-        std::string filePath = filePathPrefix + "/" + std::to_string(f) + "/sensitivity.root";
+        std::string filePath = filePathPrefix + "/" + std::to_string(f) + "/MiModule.root";
         analyze(filePath, n_calos, n_electrons, calo_energy, are_two_tracks, passed1, passed2, passed3, passed4, totalEntries);
     }
 
