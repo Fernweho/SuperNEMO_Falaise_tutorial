@@ -1,8 +1,9 @@
 #!/bin/bash
-
+source ${THRONG_DIR}/config/supernemo_profile.bash
+snswmgr_load_stack base@2024-09-04
+snswmgr_load_setup falaise@5.1.2
 # Define the main data folder and summary log file
 DATA_FOLDER="/sps/nemo/scratch/ktrofimi/Attempt/data_folder"
-
 
 # Prompt user for the name of the simulation folder
 echo "Enter the name of the simulation folder:"
@@ -22,5 +23,5 @@ fi
 # Prompt user for the number of files
 echo "Enter the number of files:"
 read FILES
-
+cd 
 ./Analyze_total $DATA_FOLDER/$USER_FOLDNAME $FILES

@@ -1,6 +1,6 @@
 #!/bin/bash
-#source ${THRONG_DIR}/config/supernemo_profile.bash
-#export G4LEDATA=/sps/nemo/sw/BxCppDev/opt/g4datasets-9.6.4/share/Geant4Datasets-9.6.4/data/G4EMLOW6.32
+
+
 
 echo "Choose the isotope: "
 echo "Se82_0nubb, Se82_2nubb, Bi214 or Tl208"
@@ -42,12 +42,12 @@ echo "	"
 echo 	"Sending request for Run $USER_FOLDNAME!"
 echo    "==========================="
 
-sed 	    -e "s|%ISO|$ISO|g" \
-            -e "s|%USER_FOLDNAME|$USER_FOLDNAME|g" \
-            -e "s|%MAIN_FOLDER|$MAIN_FOLDER|g" \
-            -e "s|%DATA_FOLDER|$DATA_FOLDER|g" \
-            -e "s|%MIRO_MODULE|$MIRO_MODULE|g" \
-            $MAIN_FOLDER/Analyze.sh > $MAIN_FOLDER/Analyze.sh
+# sed 	    -e "s|%ISO|$ISO|g" \
+#             -e "s|%USER_FOLDNAME|$USER_FOLDNAME|g" \
+#             -e "s|%MAIN_FOLDER|$MAIN_FOLDER|g" \
+#             -e "s|%DATA_FOLDER|$DATA_FOLDER|g" \
+#             -e "s|%MIRO_MODULE|$MIRO_MODULE|g" \
+#             $MAIN_FOLDER/Analyze.sh > $MAIN_FOLDER/Analyze.sh
 echo "1"
 for (( f=0; f < $FILES; f++  )) # iterate over number of files 
 do
@@ -69,7 +69,6 @@ echo "3"
         sed 	    -e "s|%f|$f|g" \
                     -e "s|%ISO|$ISO|g" \
                     -e "s|%FAL|$FAL|g" \
-                    -e "s|%SOURCE|$SOURCE|g" \
                     -e "s|%USER_FOLDNAME|$USER_FOLDNAME|g" \
                     -e "s|%MAIN_FOLDER|$MAIN_FOLDER|g" \
                     -e "s|%DATA_FOLDER|$DATA_FOLDER|g" \
@@ -78,7 +77,10 @@ echo "3"
 
         chmod 755 $DATA_FOLDER/$USER_FOLDNAME/$f/run.sh
 echo "4"
-        sbatch -o $DATA_FOLDER/$USER_FOLDNAME/$f/OUT_${f}.log -e $DATA_FOLDER/$USER_FOLDNAME/$f/ERR_${f}.log $DATA_FOLDER/$USER_FOLDNAME/$f/run.sh
+        sbatch --job-name=${ISO}_$f \
+                -o $DATA_FOLDER/$USER_FOLDNAME/$f/OUT_${f}.log \
+                -e $DATA_FOLDER/$USER_FOLDNAME/$f/ERR_${f}.log \
+                $DATA_FOLDER/$USER_FOLDNAME/$f/run.sh
 
     fi
 done
